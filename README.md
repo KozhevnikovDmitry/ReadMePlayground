@@ -1,10 +1,11 @@
 ```
-class Extensions
+class SqlMapper
 {
-  object Insert<T>(object entity);
-  int Update<T>(object entity);
-  int Delete<T>(Expression<Func<T, bool>> where);
-  IEnumerable<T> Query<T>(Expression<Func<T, bool>> where);
-  IEnumerable<T> ToDapper<T>();
+  // IDbConnetion extenstions
+  
+  int Execute(string sql);
+  object ExecuteScalar(string sql);
+  IEnumerable<T> Query<T>(string sql);
+  GridReader QueryMultiple(string sql);
 }
 ```
