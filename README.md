@@ -1,6 +1,5 @@
-# Dapper.SqlMapper
 ```
-class Extension
+class Extensions
 {
   object Insert<T>(object entity);
   int Update<T>(object entity);
