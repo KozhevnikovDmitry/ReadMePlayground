@@ -1,7 +1,7 @@
 ```
 class SqlMapper
 {
-  // IDbConnetion extensions
+  // IDbConnection extensions
   
   int Execute(string sql);
   object ExecuteScalar(string sql);
