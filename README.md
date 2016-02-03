@@ -2,10 +2,10 @@
 ```
 class Extension
 {
-  object Insert<TEntity>(object entity);
-  int Update<TEntity>(object entity);
-  int Delete<TEntity>(Expression<Func<TEntity, bool>> where);
-  IEnumerable<TEntity> Query<TEntity>(Expression<Func<TEntity, bool>> where);
-  IEnumerable<TEntity> ToDapper<TEntity>();
+  object Insert<T>(object entity);
+  int Update<T>(object entity);
+  int Delete<T>(Expression<Func<T, bool>> where);
+  IEnumerable<T> Query<T>(Expression<Func<T, bool>> where);
+  IEnumerable<T> ToDapper<T>();
 }
 ```
